@@ -1,17 +1,29 @@
 # Backend Application
 
-This is a simple Express.js server.
+This is a simple Express.js server built with TypeScript.
 
 ## Running Locally
 
-Install dependencies and start the server:
+Install dependencies and start the development server:
 
 ```bash
 npm install
-node index.js
+npm run dev
 ```
 
 The application listens on port `3000` by default.
+
+To create a production build, run:
+
+```bash
+npm run build
+```
+
+Then start the compiled server with:
+
+```bash
+npm start
+```
 
 ### Endpoints
 
@@ -34,5 +46,4 @@ docker build -t backend-app .
 docker run -p 3000:3000 backend-app
 ```
 
-This maps port 3000 from the container to your host, so you can access the
-application at `http://localhost:3000`.
+This maps port 3000 from the container to your host, so you can access the application at `http://localhost:3000`.
