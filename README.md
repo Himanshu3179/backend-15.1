@@ -13,6 +13,11 @@ node index.js
 
 The application listens on port `3000` by default.
 
+### Endpoints
+
+- `GET /` - returns "Hello, world!"
+- `GET /random` - returns a JSON object with a random number
+
 ## Docker
 
 You can build and run the application using Docker.
