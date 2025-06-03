@@ -4,14 +4,26 @@ This is a simple Express.js server.
 
 ## Running Locally
 
-Install dependencies and start the server:
+Install dependencies and start the server in development mode:
 
 ```bash
 npm install
-node index.js
+npm run dev
+```
+
+To build the TypeScript source and run the compiled code:
+
+```bash
+npm run build
+npm start
 ```
 
 The application listens on port `3000` by default.
+
+### Endpoints
+
+- `GET /` - returns "Hello, world!"
+- `GET /random` - returns a JSON object with a random number
 
 ## Docker
 
